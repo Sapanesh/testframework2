@@ -13,6 +13,7 @@
 #import <A2ISurveyFramework/A2ISurveySDK.h>
 #import <A2ISurveyFramework/A2ISurveyViewController.h>
 #import <A2ISurveyFramework/AlertInfo.h>
+#import <A2ISurveyFramework/DashboardViewController.h>
 
 
 //! Project version number for A2ISurveyFramework.

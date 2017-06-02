@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/*static double A2I_THREE_DAYS = 259200000;
+static double A2I_THREE_MONTHS = 7884000000;
+static double A2I_THREE_WEEKS = 1814400000;*/
+
 @interface A2ISurveySDK : NSObject
 
 
