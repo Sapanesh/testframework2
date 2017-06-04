@@ -4,25 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/A2IDashboardViewController.h</key>
+		<data>
+		FH7qXZAU8+DlXhfh/cj8JWrNcTU=
+		</data>
 		<key>Headers/A2ISurveyFramework.h</key>
 		<data>
-		Z/BAUg5AEAVV5cWVUGxFkP7FkNc=
+		BLVmRpXiuY+x4nQMXlNIiflf894=
 		</data>
 		<key>Headers/A2ISurveySDK.h</key>
 		<data>
-		lGZBD4ekZ49Sv5GKvLr5Gn01HOw=
+		dsKqoF67YTX4rYz/D95s2bkYEys=
 		</data>
 		<key>Headers/A2ISurveyViewController.h</key>
 		<data>
-		hkC73mfKZIEbYQeYNpeK1mmbodU=
-		</data>
-		<key>Headers/AlertInfo.h</key>
-		<data>
-		E30Owe+Uha4c9gd6O/wy9g3haeQ=
-		</data>
-		<key>Headers/DashboardViewController.h</key>
-		<data>
-		dIh3WV87BHdLWORf8/CstnZtR/Q=
+		N6BcVPE+gngQB/zofiSJEsoeqqc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -39,25 +35,21 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/A2IDashboardViewController.h</key>
+		<data>
+		FH7qXZAU8+DlXhfh/cj8JWrNcTU=
+		</data>
 		<key>Headers/A2ISurveyFramework.h</key>
 		<data>
-		Z/BAUg5AEAVV5cWVUGxFkP7FkNc=
+		BLVmRpXiuY+x4nQMXlNIiflf894=
 		</data>
 		<key>Headers/A2ISurveySDK.h</key>
 		<data>
-		lGZBD4ekZ49Sv5GKvLr5Gn01HOw=
+		dsKqoF67YTX4rYz/D95s2bkYEys=
 		</data>
 		<key>Headers/A2ISurveyViewController.h</key>
 		<data>
-		hkC73mfKZIEbYQeYNpeK1mmbodU=
-		</data>
-		<key>Headers/AlertInfo.h</key>
-		<data>
-		E30Owe+Uha4c9gd6O/wy9g3haeQ=
-		</data>
-		<key>Headers/DashboardViewController.h</key>
-		<data>
-		dIh3WV87BHdLWORf8/CstnZtR/Q=
+		N6BcVPE+gngQB/zofiSJEsoeqqc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

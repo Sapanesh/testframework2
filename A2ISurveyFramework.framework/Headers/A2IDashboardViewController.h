@@ -2,7 +2,6 @@
 //  DashboardViewController.h
 //  A2IDashboardFramework
 //
-//  Created by admin on 5/29/17.
 //  Copyright © 2017 A2I. All rights reserved.
 //
 
@@ -14,7 +13,7 @@
 -(void)A2IDashboardViewControllerDidDismissed;
 @end
 
-@interface DashboardViewController : UIViewController
+@interface A2IDashboardViewController : UIViewController
 +(id)initialize;
 
 /**
@@ -22,7 +21,7 @@
  * Dashboard Id is mandatory for Dashboard.
  * You wont be able to use this SDK until and unless you have the Dashboard Id.
  **/
-@property (nonatomic,strong)NSString *Dashboard_id;
+@property (nonatomic,strong)NSString *dashboard_id;
 
 /**
  * The property can be used to change the color of cancel button appearing on A2IDashboardViewController

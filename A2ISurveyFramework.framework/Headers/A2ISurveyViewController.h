@@ -2,8 +2,6 @@
 //  WebViewController.h
 //  A2ISurveySDK
 //
-//  Created by ananadmahajan on 3/30/17.
-//  Copyright © 2017 mehul shah. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -125,16 +123,24 @@
  *  By default, the UIAlertView prompt will display 3 days after app install. If the user declines to take the survey, they will be prompted again in 3 weeks.
  *  If the user consents to take the survey, they'll be prompted again in 3 months.
  *
- *  @param viewController The view controller from which to launch the SMFeedbackViewController
- *  @param appTitle The title of your app -- used in the title of the UIAlertView (e.g. Are you enjoying the [App Title] app?)
+ *  @param viewController The view controller from which to launch the A2ISurveyViewController
+ *  @param alertTitle The title of your app -- used in the title of the UIAlertView
+ *  @param alertBody alert message -- used in the alert of the UIAlertView
+ *  @param positiveActionTitle The title of the positive action button on the UIAlertView prompt
+ *  @param cancelTitle The title of the cancel button on the UIAlertView prompt
+ 
  */
--(void)scheduleInterceptFromViewController:(UIViewController *)viewController withAppTitle:(NSString *)appTitle;
+-(void)scheduleInterceptFromViewController:(UIViewController *)viewController
+                                alertTitle:(NSString*)alertTitle
+                                 alertBody:(NSString*)alertBody
+                       positiveActionTitle:(NSString*) positiveActionTitle
+                               cancelTitle:(NSString*) cancelTitle;
 
 /**
  *  Display the intercept UIAlertView to the user - asking them to give feedback on your app.
  *  Supply an alert title and body for the UIAlertView prompt, as well as time intervals (in seconds) to wait before displaying the prompt (i.e. after app install, after consents to take the survey, and after the user declines to take the survey)
  *
- *  @param viewController The view controller from which to launch the SMFeedbackViewController
+ *  @param viewController The view controller from which to launch the A2ISurveyViewController
  *  @param alertTitle The title of the UIAlertView prompt
  *  @param alertBody The body of the UIAlertView prompt
  *  @param positiveActionTitle The title of the positive action button on the UIAlertView prompt
@@ -143,8 +149,24 @@
  *  @param afterAcceptInterval The amount of time (in seconds) to wait before prompting the user to give feedback again after they consent to take your survey.
  *  @param afterDeclineInterval The amount of time (in seconds) to wait before prompting the user to give feedback again after they decline to take your survey.
  */
--(void)scheduleInterceptFromViewController:(UIViewController *)viewController alertTitle:(NSString *)alertTitle alertBody:(NSString *)alertBody positiveActionTitle:(NSString *) positiveActionTitle cancelTitle:(NSString*) cancelTitle afterInstallInterval:(double)afterInstallInterval afterAcceptInterval:(double)afterAcceptInterval afterDeclineInterval:(double)afterDeclineInterval;
+-(void)scheduleInterceptFromViewController:(UIViewController *)viewController
+                                alertTitle:(NSString*)alertTitle
+                                 alertBody:(NSString*)alertBody
+                       positiveActionTitle:(NSString*)positiveActionTitle
+                               cancelTitle:(NSString*)cancelTitle
+                      afterInstallInterval:(double)afterInstallInterval afterAcceptInterval:(double)afterAcceptInterval afterDeclineInterval:(double)afterDeclineInterval;
 
+
+/**
+ *  Display the A2ISurveyViewController to the user.
+ *
+ *  @param viewController The view controller from which to launch the SMFeedbackViewController
+ *  @param flag Pass YES to animate the presentation; otherwise, pass NO.
+ *  @param completion The block to execute after the presentation finishes. This block has no return value and takes no parameters. You may specify nil for this parameter.
+ */
+-(void)presentFromViewController:(UIViewController *)viewController
+                        animated: (BOOL)flag
+                      completion:(void (^)(void))completion;
 
 @property (nonatomic,weak)id<A2ISurveyDelegate>delegate;
 

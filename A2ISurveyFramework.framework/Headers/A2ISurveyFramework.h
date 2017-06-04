@@ -2,7 +2,6 @@
 //  A2ISurveyFramework.h
 //  A2ISurveyFramework
 //
-//  Created by Sapnesh Mahajan on 13/05/17.
 //  Copyright © 2017 A2I. All rights reserved.
 //
 
@@ -12,8 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <A2ISurveyFramework/A2ISurveySDK.h>
 #import <A2ISurveyFramework/A2ISurveyViewController.h>
-#import <A2ISurveyFramework/AlertInfo.h>
-#import <A2ISurveyFramework/DashboardViewController.h>
+#import <A2ISurveyFramework/A2IDashboardViewController.h>
 
 
 //! Project version number for A2ISurveyFramework.
