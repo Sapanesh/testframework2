@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "A2ISurveyFramework"
-s.version          = "0.0.1"
+s.version          = "0.0.3"
 s.summary      = "A sample Test framework"
 s.description  = "A sample Test framework Test"
 s.homepage         = "http://www.sphinx-solution.com"
