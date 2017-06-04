@@ -160,7 +160,7 @@
 /**
  *  Display the A2ISurveyViewController to the user.
  *
- *  @param viewController The view controller from which to launch the SMFeedbackViewController
+ *  @param viewController The view controller from which to launch the A2IDashboardViewController
  *  @param flag Pass YES to animate the presentation; otherwise, pass NO.
  *  @param completion The block to execute after the presentation finishes. This block has no return value and takes no parameters. You may specify nil for this parameter.
  */

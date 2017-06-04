@@ -118,6 +118,17 @@
 -(void)hideRefreshButton;
 
 
+/**
+ *  Display the A2IDashboardViewController to the user.
+ *
+ *  @param viewController The view controller from which to launch the A2IDashboardViewController
+ *  @param flag Pass YES to animate the presentation; otherwise, pass NO.
+ *  @param completion The block to execute after the presentation finishes. This block has no return value and takes no parameters. You may specify nil for this parameter.
+ */
+-(void)presentFromViewController:(UIViewController *)viewController
+                        animated: (BOOL)flag
+                      completion:(void (^)(void))completion;
+
 @property (nonatomic,weak)id<A2IDashboardDelegate>delegate;
 
 @end
